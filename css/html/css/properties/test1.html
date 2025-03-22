@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        .container
+        {
+            position: relative;
+            top: 180px;
+            left:200px ;
+            /* border: 2px solid red; */
+            width: 200px;
+            /* for reducing width */
+            margin: 100px auto;
+
+        }
+        .item
+        {
+            border:2px solid black ;
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition: all 2s linear 0s;
+
+        }
+        .one
+        {
+           background-color: aqua; 
+        }
+        .two
+        {
+            background-color:black;
+        }
+        .three
+        {
+            background-color: aquamarine;
+        }
+        .four
+        {
+            background-color: blue;
+        }
+        .container:hover .one
+        {
+            transform: translateY(-200px) rotate(360deg);
+        }
+        .container:hover .two
+        {
+            transform: translateX(200px) rotate(360deg);
+        }
+        .container:hover .three
+        {
+            transform: translateY(200px) rotate(360deg);
+        }
+        .container:hover .four
+        {
+            transform: translateX(-200px)  rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class ="container">
+    
+        <div class = "item one">1</div>
+        <div class = "item two">2 </div>
+        <div class = "item three">3</div>
+        <div class = "item four">4</div>
+
+
+
+    </div>
+
+    
+</body>
+</html>

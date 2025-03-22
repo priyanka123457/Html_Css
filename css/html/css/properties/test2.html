@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style> 
+        .container
+        {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow :0px 0px 30px black; 
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        img
+        {
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            transition: all 2s linear ;
+        }
+        .container:hover img
+        {
+            transform: scale(1.5);
+        }
+        .items
+        {
+            transition: all 3s linear 0s;
+            border: 2px solid black;
+        }
+        .container:hover .left
+        {
+            transform: translateY(300px);
+        }
+        .container:hover .right
+        {
+            transform: translateY(-300px);
+        }
+        .items
+        {
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            background-color: orange;
+            position: absolute;
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../properties/A._P._J._Abdul_Kalam.jpg" alt="">
+        <div class="items left"></div> 
+        <div class="items right"></div>
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+        <!-- Input Field for typing -->
+        <!-- <input type="text" id="myInput" placeholder="Type something and press Enter" />
+      
+        <script>
+          // Accessing the input element
+          let inputField = document.getElementById('myInput');
+      
+          // Adding keypress event listener
+          inputField.addEventListener('keypress', function(event) {
+            // Check if the pressed key is "Enter"
+            if (event.key === 'Enter') {
+              alert('You pressed Enter!');  // Shows an alert when Enter key is pressed
+            }
+          }); -->
+
+    <input type="text" id = "myinput" placeholder="type somethong">
+    <script>
+        fetchdata = document.getElementById('myinput')
+        fetchdata.addEventListener('keypress',function(event){
+
+            if(event.key == 'Enter'){
+                alert('you pressed enter')
+            }
+        })
+    </script>
+</body>
+</html>

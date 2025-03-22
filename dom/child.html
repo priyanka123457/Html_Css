@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="parentDiv">
+        <p>This is a paragraph inside the div.</p>
+        <p>This is another paragraph inside the div.</p>
+        <p>Third paragraph inside the div.</p>
+    </div>
+
+    <script>
+        // Select the parent element (div)
+        const parentElement = document.getElementById('parentDiv');
+
+        // Access all child elements (p tags) of the parent div
+        const children = parentElement.children;
+
+        // Log all child elements to the console
+        console.log(children);  // This will log a HTMLCollection of all <p> elements inside parentDiv
+
+        // Loop through the child elements and change the text of each paragraph
+        for (let i = 0; i < children.length; i++) {
+            children[i].textContent = 'Updated paragraph ' + (i + 1);
+        }
+    </script>
+</body>
+</html>

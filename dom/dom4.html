@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Click the button to insert a new list item before the second item</h2>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li id="secondItem">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <br>
+
+    <button onclick="insertListItem()">Insert List Item</button>
+
+    <script>
+        function insertListItem() {
+            // Step 1: Create a new <li> element
+            const newItem = document.createElement('li');
+            newItem.textContent = 'New Item inserted before Item 2';
+
+            // Step 2: Select the existing list item by its ID
+            const secondItem = document.getElementById('secondItem');
+
+            // Step 3: Insert the new list item before the second item
+            document.getElementById('myList').insertBefore(newItem, secondItem);
+        }
+    </script>
+
+</body>
+</html>

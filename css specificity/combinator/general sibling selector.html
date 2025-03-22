@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Sibling Selector Example</title>
+  <style>
+    h2 ~ p {
+      color: green;  /* All <p> elements that come after <h2> will be green */
+    }
+  </style>
+</head>
+<body>
+  <h2>Heading 2</h2>
+  <p>This paragraph is after h2, it will be green.</p>
+  <p>This paragraph is also after h2, it will also be green.</p>
+  <h1>Heading 1</h1>
+  <p>This paragraph is after h1, but not h2, so it won't be green.</p>
+</body>
+</html>

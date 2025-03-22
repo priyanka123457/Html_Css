@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=    <div id="parentDiv" style="background-color: lightblue; padding: 20px;">
+       
+    <title>Document</title>
+</head>
+<body>
+<div id = "parent" style="background-color: aqua; padding: 20px;">
+    <p>hello</p>
+    <button id = "myButton">click here</button>
+</div>    
+<script>
+ document.getElementById('parent').addEventListener('click',function(){
+
+    const buttonElement = document.getElementById('myButton');
+
+// Get the parent element of the button
+const parentElement = buttonElement.parentElement;
+
+// Change the background color of the parent element
+parentElement.style.backgroundColor = 'lightgreen';
+});
+</script>
+</body>
+</html>

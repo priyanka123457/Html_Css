@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dom3.css">
+    
+    <title>Document</title>
+</head>
+<!-- <body>
+    accces the elemnt by it id
+
+    <div id ="a">hello ji</div>
+    <button id = "b">click</button>
+    <script>
+    let button = document.getElementById('b');
+
+    let  div =  document.getElementById('a');
+
+       
+    button.onclick = function(){
+    div.textContent = 'you clixk the button'
+    };
+    </script> -->
+
+    <!-- accces the elemnt by its class -->
+     <!-- <p >this is first class</p>
+     <p >this is secont class</p>
+     <p >this is third class</p>
+     <button onclick="change()">change text color</button>
+     <script>
+       let  element = document.getElementsByTagName('p')
+        // console.log(element)
+        function change(){
+            for(i = 0;i<element.length;i++){
+                element[i].style.color =  'red';
+            }
+        } -->
+            <!-- BY USING QUERY SELECTOR -->
+            <div class="A">This is the first div.</div>
+            <div class="A">This is the second div.</div>
+            <div class="A">This is the third div.</div>
+
+            <button onclick="changer()">Change Color</button>
+
+            <script>
+                function changer() {
+            // Select all elements with the class 'myClass'
+                const elements = document.querySelectorAll('.A');
+            
+                
+                elements.forEach(function(element) {
+                    element.style.backgroundColor = 'lightcoral';
+        });
+    }
+     </script>
+
+
+
+
+</body>
+</html>

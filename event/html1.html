@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine
+            /* color(srgb red green blue) */
+        }
+    </style>
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <button id = "btn">click</button>
+    <!-- <div onmouseover="console.log('hii')">this is my page</div> -->
+    <script>
+        let btn1 = document.querySelector("#btn");
+        // btn1.onclick = () => {
+        //     console.log('button was clicked');
+        // }
+        // let btn1 = document.querySelector("#btn");
+        // btn1.onclick = (e) => {
+        //     console.log(e);
+        // }
+        btn1.addEventListener("click",(eve) => {
+
+            console.log("hiii1");
+            console.log(eve)
+            console.log(eve.type)
+        })
+        btn1.addEventListener("click",() => {
+
+        console.log("hiii2");
+        })  
+        const hand1 = () =>{
+
+        
+        console.log("hiii3");
+        }        
+        btn1.addEventListener("click",hand1)
+        btn1.removeEventListener("click",hand1)
+
+    </script>
+    
+</body>
+</html>

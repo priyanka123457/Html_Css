@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> psudoelementselector </title>
+    <style>
+    
+        h1::first-letter
+        {
+           color:blue ;
+        }
+        p::before
+        {
+            content:"("
+            
+        }
+        p::after
+        {
+            content: ")"
+        }
+        p::selection
+        {
+            background-color: brown;
+        }
+        p::first-letter
+        {
+            background-color: blueviolet;
+        }
+        P::after
+        {
+            background-color:brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is python class</h1>
+    <p>Dr. Avul Pakir Jainulabdeen Abdul Kalam was born on October 15, 1931, 
+            in Rameswaram, Tamil Nadu, India. He was an esteemed Indian aerospace 
+            scientist who served as the 11th President of India from 2002 to 2007. 
+            Known as the 'Missile Man of India' for his contributions
+             to India's missile programs, Dr. Kalam's life and work continue 
+             to inspire millions across the country and beyond</p>
+</body>
+</html>

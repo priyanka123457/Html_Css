@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <button id = 'a'>click here</button>
+    <script>
+        // select the button by its id
+        let event = document.getElementById('a')
+        // event handler
+        function handler(){
+            alert('click button');
+        }
+        // add event lisner to the button
+        event.addEventListener('click',handler())
+
+    </script>
+</body>
+</html>

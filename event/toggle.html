@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <button id = "btn2">change it</button>
+    <script>
+        let btn2 =  document.querySelector("#btn2");
+        let currentmode = "light";
+
+        btn2.addEventListener("click", () =>{
+            if(currentmode === "light") {
+                currentmode = "dark";
+                document.querySelector("body").style.backgroundColor = "black";
+            }
+            else{
+                currentmode = "light";
+                document.querySelector("body").style.backgroundColor = "blue
+                ";
+
+            }
+
+        console.log("currentmode");
+        });
+        // console.log("currentmode")
+
+
+        
+    </script>
+    
+</body>
+</html>

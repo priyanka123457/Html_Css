@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function foodorder(callback){
+            console.log('food is beieng process  ofter some time will serve you')
+
+            setTimeout(function(){
+                console.log('food is ready')
+                callback('pizza')
+            },3000)
+        }
+       function orderplaced(food){
+        console.log(`sering your food ${food}`)
+       }
+       
+       foodorder(orderplaced)
+    </script>
+</body>
+</html>

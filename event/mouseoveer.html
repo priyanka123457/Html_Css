@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+       
+    <p id="myText">Hover over this text to change its color.</p>
+  
+  <script>
+    // Accessing the text element
+    let textElement = document.getElementById('myText');
+
+    // Adding mouseover event listener
+    textElement.addEventListener('mouseover', function() {
+      textElement.style.color = 'blue';  // Changes text color to blue on mouse hover
+    });
+
+    // Adding mouseout event listener to revert the color when mouse leaves
+    textElement.addEventListener('mouseout', function() {
+      textElement.style.color = 'red'// Reverts color back to black when mouse leaves
+    });
+    </script>
+    
+</body>
+</html>

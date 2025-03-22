@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id = 'a'>hello wrold</h1>
+    <button>clickhere</button>
+    <script>
+        let ele = document.getElementById('a')
+        let but = document.querySelector('button')
+
+        button.addEventListener('click',function(){
+            ele.textContent = 'hello';
+        }); -->
+        <h1 id="a"></h1>
+        <button>Click Here</button>
+    
+        <script>
+            // Select the elements
+            let ele = document.getElementById('a');
+            let button = document.querySelector('button');
+    
+            // Add an event listener to the button
+            button.addEventListener('click', function() {
+                // Change the content of the <h1> element
+                ele.textContent = 'Button clicked!';
+            });
+    </script>
+</body>
+</html>

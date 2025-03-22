@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+     <!-- Empty div with id "myElement" -->
+  <div id="myElement">welcome</div>
+  
+  <!-- Button to trigger JavaScript code -->
+  <button id="myButton">Click to Log Element</button>
+
+  <script>
+    // Accessing the element with id "myElement"
+    let element = document.getElementById('myElement');
+    
+    // Logging the element to the console initially
+    console.log(element);  // Logs the DOM element with id "myElement"
+
+    // Accessing the button and adding event listener
+    let button = document.getElementById('myButton');
+    button.addEventListener('click', function() {
+      // When button is clicked, set text content to the div
+      element.innerHTML = 'Button Clicked! Here is some data!';  // Adding text to the div
+
+      // Logging the updated element to the console
+      console.log(element);  // Logs the element with the new content
+    });
+  </script>
+</body>
+</html>

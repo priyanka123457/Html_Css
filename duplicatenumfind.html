@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [1,2,3,4,5,3,5];
+        let finddup = new set();
+        let dup = [] 
+        for(i = 0; i<num.length; i++){
+            if(finddup.has(arr[i])){
+                dup.push(arr[i])
+                
+            }else{
+                finddup.add(arr[i])
+            }
+        }  
+        console.log(finddup);
+        console.log(dup);   
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<form id="myForm">
+        
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" placeholder="Enter something" required>
+        <button type="submit">Submit</button>
+    </form>    
+    <script>
+        let formacces = document.getElementById('myForm')
+        formacces.addEventListener('submit',function(event){
+            // event.preventDefault();
+            console.log('Form has been submitted!');
+
+            alert('Form Submitted!');
+
+        });
+    </script>
+</body>
+</html>
