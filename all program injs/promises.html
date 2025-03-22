@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let mypromise = new Promise((resolve,reject) => {
+
+        issuceesfull = false
+        if(issuceesfull){
+        resolve("tast completed succesfully");
+        }else{
+         reject('not completed')
+        }
+    });
+    mypromise
+    .then((result)=>{
+        console.log(result)
+
+    })
+    .catch((failed) =>{
+        console.log(failed)
+    });
+
+</script>
+</body>
+</html>

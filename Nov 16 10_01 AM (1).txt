@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>LoginForm</title>
+    <style>
+        legend
+        {
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 0px 15px;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="">
+        <fieldset>
+            <legend>LoginForm</legend>
+            <table cellspacing="10px">
+                <tr>
+                    <td><label for="">UserName</label></td>
+                    <td><input type="text" placeholder="Enter the UserName"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" placeholder="Enter the password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button>submit</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

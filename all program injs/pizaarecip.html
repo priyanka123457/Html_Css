@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayhello(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    reject("hello word")
+
+                },2000)
+            })
+        }
+
+        async function greet(){
+            try{
+            console.log("data procesing it will take few second")
+            let message = await sayhello();
+            console.log(message)
+            }catch(error){
+                console.log('something went wrong')
+
+            }
+        }
+        greet()
+    </script>
+</body>
+</html>

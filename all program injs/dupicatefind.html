@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr = [1,2,3,4,1,6,7,1]
+        const duplicate = arr.filter((ele,index,array)=>
+        array.indexOf(ele) !== index
+    );
+    console.log(duplicate)
+    // if(duplicate.length<3){
+    //     console.log('yes')
+    // }
+    // else{
+    //     console.log('no')
+    // }
+    // remove duplicate find unique number
+    const newarr = [...new Set(arr)];
+    console.log(newarr)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let copypalin = (num1)=>{
+           let copy = num1
+           res = 0
+            
+            while(num1>0){
+                ld = num1%10
+                res = res*10+ld
+                num1 = Math.floor(num1/10)
+            }
+            if(res == copy){
+                console.log('it is palindrome number')
+            }else{
+                console.log('it is not  palindrome')
+            }
+        }
+        let num = 111;
+        copypalin(num)
+    
+        
+
+    </script>
+</body>
+</html>

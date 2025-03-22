@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr = [1,2,3,4,1,2,3,5]
+    let seen = new Set();
+    let duplicate = [];
+    for(const Value of arr)
+    if (seen.has(Value)){
+        duplicate.push(Value);
+    }
+
+    else{
+        seen.add(Value);
+    }
+
+    
+    
+    </script>
+    
+</body>
+</html>

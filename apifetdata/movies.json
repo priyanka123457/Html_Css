@@ -1,0 +1,27 @@
+
+[
+    {
+        "id": 101,
+        "imageUr1": "https://s.yimg.com/fz/api/res/1.2/3LulTfa510wLE.PjAhwzXw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yMjg7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz00MDA-/https://s.yimg.com/am/60d/86526f9d8a1701fbf7a78b9b42dbe66c",
+        "moveisName": "puspa",
+        "heroname": "alluarjun"
+    },
+    {
+        "id": 102,
+        "imageUr1": "https://stat4.bollywoodhungama.in/wp-content/uploads/2024/12/Game-Changer-322x504.jpeg",
+        "moveisName": "gamechanger",
+        "heroname": "ramcharan"
+    },
+    {
+        "id": 103,
+        "imageUr1": "https://tse1.mm.bing.net/th?id=OIP.umKoF5lz94Mv5bewZCElqwHaKX&pid=Api&P=0&h=180",
+        "moveisName": "salar",
+        "heroname": "prabas"
+    },
+    {
+        "id": 104,
+        "imageUr1": "https://tse1.mm.bing.net/th?id=OIP.cPgEhAapSRWwEH97BHH7rgHaEK&pid=Api&P=0&h=180",
+        "moveisName": "devara",
+        "heroname": "ntr"
+    }
+]

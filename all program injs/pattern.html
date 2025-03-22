@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Pattern</title>
+    <style>
+#pattern {
+            font-family: monospace;
+            white-space: pre; /* To preserve the line breaks and spaces */
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Square Pattern of Stars</h1>
+
+<div id="pattern"></div>
+
+<script>
+    let n = 5;  // Size of the square
+    let result = '';  // String to hold the pattern
+
+    for (let i = 1; i < n; i++) {  // Outer loop for rows
+        let row = '';  // String to store each row
+
+        for (let j = 0; j < n-i; j++) {  // Inner loop for columns
+            row += '';  // Append star to the row
+        }
+        for(let j = 0; j<i; i++){
+            row+='*';
+        }
+
+        result += row + '\n';  // Add the row to the result string, with a new line
+    }
+
+    // Display the result in the <div> with id="pattern"
+    // document.getElementById('pattern').textContent = result;
+    console.log(result)
+</script>
+

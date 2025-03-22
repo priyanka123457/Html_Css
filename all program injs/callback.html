@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // asyncronous function call
+        function greet(name,callback){
+            console.log(`hello ${name}`)
+            setTimeout(()=>{
+                console.log('hel')
+                callback()
+            },5000)
+
+            callback()
+        }
+
+        function sayhello(){
+            console.log('hmiii')
+        }
+
+        greet('priyanka',sayhello)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 123
+        let copy = num
+        let len = num.toString().length;
+        let res = 0
+        // console.log(len)
+        let i = 0;
+        while(i<num){
+            let ld = num%10;
+            res = res*10+ld;
+            num = Math.floor(num/10);
+            
+        }
+        console.log(res)
+        
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 145;
+        let copy = num;
+        let res = 0;
+      
+        while (num>0){
+            let fact = 1
+            ld = num%10;
+            for(i=1;i<=ld;i++){
+                fact+= fact*i
+            }
+            num = Math.floor(num/10);
+        }
+        if(fact = copy){
+            console.log('it is strong number')
+        }else{
+            console.log('it is not  strong number')
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class father{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+
+        
+
+        work(){
+            console.log(` ${this.name} work as a lower`);
+        }
+
+        greet(){
+            console.log(`hello i am ${this.name} i am ${this.age} year old`)
+        }
+
+    }
+
+    class son extends father{
+        constructor(name,age,hobby){
+            super(name,age)
+            this.hobby;
+        }
+    
+    play(){
+        console.log(`${this.name} loves playing footwall`)
+    }
+}
+
+let parent =  new father('john',58);
+let child =  new son('priya',30,'priya')
+child.work();
+    </script>
+    
+</body>
+</html>

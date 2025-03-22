@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+    function outer(){
+         let value = 'hello';
+         function inner(){
+            console.log(value)
+         }
+         return inner;
+    }
+
+    const myclosure = outer();
+    myclosure();
+</script>
+</body>
+</html>

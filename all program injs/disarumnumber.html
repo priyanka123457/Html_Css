@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = 135;
+        let copy = number;
+        let res = 0; 
+        let power =  number.toString().length
+        while(number>0){
+            ld =  number%10;
+            res+= res+ld**power
+            power = power-1
+            num = Math.floor(number/10)
+        }
+        if(res==copy){
+            console.log('it is disarum number')
+        }else{
+            console.log('it is not disarum number')
+        }
+    </script>
+</body>
+</html>
